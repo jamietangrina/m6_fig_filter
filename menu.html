@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Fig &amp; Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Fig &amp; Filter</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page menu-page" id="main" tabindex="-1">
+    <div class="menu-photos">
+      <img src="images/latte-art.jpg" alt="Close-up of heart-shaped latte art in a Fig &amp; Filter cup">
+      <img src="images/menu-flatlay.jpg" alt="A croissant and two lattes on a wooden table, seen from above">
+    </div>
+
+    <h1>Menu</h1>
+    <p>Dietary markers: (V) vegetarian · (VG) vegan · (GF) gluten-free</p>
+
+    <div class="menu-grid">
+      <section class="coffee">
+        <h2>Coffee</h2>
+        <table>
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Espresso</td><td>$3.50</td></tr>
+            <tr><td>Long black</td><td>$4.00</td></tr>
+            <tr><td>Flat white</td><td>$5.00</td></tr>
+            <tr><td>Latte</td><td>$5.00</td></tr>
+            <tr><td>Cappuccino</td><td>$5.00</td></tr>
+            <tr><td>Filter of the week (ask what's on)</td><td>$6.00</td></tr>
+            <tr><td>Iced latte</td><td>$6.00</td></tr>
+            <tr><td>Extra shot / oat or soy milk</td><td>+$0.80</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="not-coffee">
+        <h2>Not Coffee</h2>
+        <table>
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Loose-leaf tea (English breakfast, sencha, chamomile)</td><td>$4.50</td></tr>
+            <tr><td>Chai latte</td><td>$5.50</td></tr>
+            <tr><td>Fresh orange juice</td><td>$6.00</td></tr>
+            <tr><td>House-made lemonade with fig syrup</td><td>$5.50</td></tr>
+            <tr><td>Hot chocolate</td><td>$5.00</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="all-day">
+        <h2>All-Day Kitchen</h2>
+        <table>
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sourdough toast, cultured butter, house jam (V)</td><td>$8.00</td></tr>
+            <tr><td>Granola, yoghurt, seasonal fruit (V, GF)</td><td>$12.00</td></tr>
+            <tr><td>Mushrooms on toast, poached egg, herbs (V)</td><td>$16.00</td></tr>
+            <tr><td>Fig &amp; Filter big breakfast</td><td>$22.00</td></tr>
+            <tr><td>Halloumi and roast-vegetable sandwich (V)</td><td>$14.00</td></tr>
+            <tr><td>Chicken schnitzel sandwich, slaw, pickles</td><td>$16.00</td></tr>
+            <tr><td>Soup of the day with sourdough (ask)</td><td>$12.00</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="bakery">
+        <h2>Bakery</h2>
+        <table>
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Butter croissant (V)</td><td>$4.50</td></tr>
+            <tr><td>Almond croissant (V) — until they run out</td><td>$6.00</td></tr>
+            <tr><td>Fig and walnut scone (V)</td><td>$5.00</td></tr>
+            <tr><td>Banana bread, toasted (V, GF)</td><td>$6.50</td></tr>
+            <tr><td>Cookie of the day (V)</td><td>$4.00</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+    <section class="panel">
+      <p>Prices include tax. The kitchen closes at 3:30pm; coffee and bakery run until close.</p>
+      <a href="catering.html" class="primary">Order catering</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong class="wordmark">Fig &amp; Filter</strong>
+      <span>8 Chalk Lane</span>
+      <span>Open Tuesday to Sunday, 7:30am – 5:00pm</span>
+      <a href="mailto:hello@figandfilter.example">hello@figandfilter.example</a>
+      <a href="catering.html">Order catering</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    const navLinks = document.querySelector('.nav-links');
+    header.classList.add('nav-ready');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('expanded');
+    });
+
+    header.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>

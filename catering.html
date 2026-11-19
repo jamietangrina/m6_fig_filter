@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catering | Fig &amp; Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Fig &amp; Filter</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page catering-page" id="main" tabindex="-1">
+    <img src="images/catering-spread.jpg" alt="A catering spread of filled croissants and canapés on serving stands">
+
+    <h1>Catering</h1>
+
+    <section class="intro">
+      <p>We cater meetings, workshops, and office mornings within a 5km radius. Everything is made in our kitchen the same morning it's delivered. Order by 2:00pm the day before; for the Full Spread, give us two working days.</p>
+    </section>
+
+    <section class="packages">
+      <h2>Packages</h2>
+      <div class="package-grid">
+
+        <article class="package panel">
+          <h3>The Coffee Run — $9 per person</h3>
+          <p>For meetings that just need good coffee.</p>
+          <ul>
+            <li>A 2.5L flask of batch-brew filter per 8 people</li>
+            <li>Oat and dairy milk, cups, and sugar included</li>
+            <li>Add a flask of chai for $12</li>
+          </ul>
+        </article>
+
+        <article class="package panel">
+          <h3>The Morning Tea — $16 per person</h3>
+          <p>The one most offices reorder.</p>
+          <ul>
+            <li>Batch-brew filter as above</li>
+            <li>Two bakery items per person (croissants, scones, cookie of the day)</li>
+            <li>Seasonal fruit platter</li>
+            <li>Minimum 6 people</li>
+          </ul>
+        </article>
+
+        <article class="package panel">
+          <h3>The Full Spread — $28 per person</h3>
+          <p>For workshops, planning days, and celebrations.</p>
+          <ul>
+            <li>Everything in The Morning Tea</li>
+            <li>Sandwich platter (halloumi and roast vegetable, chicken schnitzel)</li>
+            <li>Fresh orange juice and house lemonade</li>
+            <li>Minimum 10 people, two working days' notice</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-to-order panel">
+      <h2>How to order</h2>
+      <p>Email <strong>catering@figandfilter.example</strong> with your date, headcount, delivery address, and any dietary needs. We confirm within one working day. Delivery is free within 5km; we drop off, set up, and collect the kit the same afternoon.</p>
+
+      <a href="mailto:catering@figandfilter.example" class="primary">Order catering</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong class="wordmark">Fig &amp; Filter</strong>
+      <span>8 Chalk Lane</span>
+      <span>Open Tuesday to Sunday, 7:30am – 5:00pm</span>
+      <a href="mailto:hello@figandfilter.example">hello@figandfilter.example</a>
+      <a href="catering.html">Order catering</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    const navLinks = document.querySelector('.nav-links');
+    header.classList.add('nav-ready');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('expanded');
+    });
+
+    header.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>

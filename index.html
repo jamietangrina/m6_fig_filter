@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Fig &amp; Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Fig &amp; Filter</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page index-page" id="main" tabindex="-1">
+    <section class="home-hero">
+      <img src="images/hero-espresso-pour.jpg" alt="Espresso pouring from the portafilter into a white cup at the Fig &amp; Filter counter">
+      <div>
+        <h1>Fig &amp; Filter</h1>
+        <p class="tagline">Roasted here. Baked here. Poured for you.</p>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm · 8 Chalk Lane · <a class="primary" href="visit.html">Find us →</a></p>
+      </div>
+    </section>
+
+    <section class="three-reasons">
+      <div class="container">
+        <h2>Three reasons to visit</h2>
+        <div class="row">
+          <div class="card">
+            <h3>We roast our own.</h3>
+            <p>Small batches, twice a week, in the machine you can see from the counter. If you can smell it, it was probably roasted within the last few days.</p>
+          </div>
+          <div class="card">
+            <h3>The kitchen doesn't cut corners.</h3>
+            <p>Everything in the pastry case was made on site that morning. When the almond croissants run out, they run out.</p>
+          </div>
+          <div class="card">
+            <h3>Stay as long as you like.</h3>
+            <p>Big tables, honest wifi, and nobody hovering to turn your seat. Laptops welcome on weekdays; humans welcome always.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secondary-teaser panel">
+      <div class="container">
+        <p>Hungry already? <a href="menu.html">See the full menu →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong class="wordmark">Fig &amp; Filter</strong>
+      <span>8 Chalk Lane</span>
+      <span>Open Tuesday to Sunday, 7:30am – 5:00pm</span>
+      <a href="mailto:hello@figandfilter.example">hello@figandfilter.example</a>
+      <a href="catering.html">Order catering</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    const navLinks = document.querySelector('.nav-links');
+    header.classList.add('nav-ready');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('expanded');
+    });
+
+    header.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-surface" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#fdf9f3", "on-tertiary-container": "#98a66f", "primary": "#331736", "surface-container-highest": "#e6e2dc", "on-secondary-container": "#755100", "surface-tint": "#755377", "tertiary": "#1b2500", "surface-dim": "#dddad4", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#f5bd58", "on-secondary-fixed-variant": "#5f4100", "secondary-container": "#ffc55f", "inverse-primary": "#e3b9e3", "primary-fixed-dim": "#e3b9e3", "surface-container": "#f1ede7", "error-container": "#ffdad6", "on-primary-fixed-variant": "#5b3c5e", "surface-variant": "#e6e2dc", "tertiary-container": "#303b0f", "outline": "#7e747c", "on-primary": "#ffffff", "tertiary-fixed-dim": "#bfcd92", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#161f00", "on-surface-variant": "#4d444b", "error": "#ba1a1a", "inverse-surface": "#31302d", "on-tertiary-fixed-variant": "#404b1e", "secondary": "#7d5700", "surface-container-low": "#f7f3ed", "primary-container": "#4a2c4d", "outline-variant": "#cfc3cc", "surface": "#fdf9f3", "on-secondary-fixed": "#271900", "tertiary-fixed": "#dbe9ac", "surface-card": "#FFFFFF", "secondary-fixed": "#ffdeaa", "text-primary": "#221E1F", "inverse-on-surface": "#f4f0ea", "on-error": "#ffffff", "on-background": "#1c1c18", "on-error-container": "#93000a", "primary-fixed": "#ffd6fe", "surface-container-high": "#ebe8e2", "on-surface": "#1c1c18", "on-primary-fixed": "#2c1030", "on-primary-container": "#ba94bb", "border-subtle": "#E5DCCE", "surface-bright": "#fdf9f3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "margin-desktop": "2.5rem", "space-md": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "price-callout": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"] }, "fontSize": { "display-hero": ["3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "600" }], "price-callout": ["1.25rem", { "lineHeight": "1.2", "fontWeight": "700" }], "label-sm": ["0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "700" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }], "headline-md": ["1.5rem", { "lineHeight": "1.35", "fontWeight": "600" }], "label-md": ["0.875rem", { "lineHeight": "1.25", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["2.25rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col selection:bg-secondary-container selection:text-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Fig &amp; Filter Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDUIGLAqBqVx-HX4Yzch9pwbR84U2L6W_v4-KaG6m_k-yraB5C0BTAy09kFPhX1i-KU-SOeFppkd6WH0ZpOUC-wbuVm7rqU3U9ntw0-9hBNAAaWk65YSME92hWyLUZeZaSZ93eiDRHBawHNCC80foNAVm9AFo_Y_CuiongtezYsfVP5f8IesIEz39hIMnEoLO6_eveErfb64Yl78Qf5v6gN6UXCMXI7jM2qXli3EcMCJw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-display-hero">Fig &amp; Filter</span></div><div class="flex items-center gap-space-sm"><span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Catering</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 pb-28 bg-surface flex flex-col"><div class="w-full flex-1"><div class="flex flex-col w-full">
+<!-- Intro Header & Context -->
+<section class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>Office &amp; Studio Catering</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight font-headline-lg">
+      Fresh roasts &amp; bakery goods, straight to your meeting table.
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Thoughtful corporate catering without the typical plastic platters or stale pump pots. Batch-brewed on demand, packed in compostables, and set up quietly.
+    </p>
+</section>
+<!-- Editorial Imagery Slice -->
+<section class="px-margin pb-space-lg">
+<div class="w-full h-44 rounded-xl overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Artisanal catering breakfast layout on light linen with stainless steel coffee thermoses, stacked porcelain mugs, seasonal fresh fig tarts, and flaky butter croissants in natural morning light. Soft warm neutral palette featuring plum, warm cream, and amber accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADS3spcRIQkpL9E6xckxHChokLvNh_fjt2vgPWEXrQphdbiH4B0C4SB86Kqb_K2vvg4luI0duRZX2ZpsBWbLOsJZ0eO52x4LGjumogsnye9KKEkOQUu8ePCsojr9hPmuwgEXuqT3vvuxSJuhey9UghLSr53T0pNZtKKMWphOv54-rVQvmlCsvv538JMdl9ImiIQyFwB5zZe8lKyc-yOOmjnNflmB7rGctOStU6fcF8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex items-end p-space-md">
+<span class="text-on-primary font-label-sm text-label-sm tracking-widest uppercase">8 Chalk Lane Kitchen • Roasted Daily</span>
+</div>
+</div>
+</section>
+<!-- Package Headcount Interactive Estimator & Packages -->
+<section class="px-margin flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Catering Packages</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Min. 6 people per order. Custom tweaks welcome.</p>
+</div>
+</div>
+<!-- Package 1: The Coffee Run -->
+<article class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative transition-all duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Essential Fuel</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">The Coffee Run</h3>
+</div>
+<div class="text-right">
+<span class="font-price-callout text-price-callout text-primary">$9</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Everything required to wake up an early strategy sprint or kick off Monday morning.
+      </p>
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Batch brew thermoses of house-roasted single origin filter coffee</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Freshly baked mini butter pastries</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Plant-fibre compostable cups, oat &amp; dairy milk carafes</span>
+</div>
+</div>
+</article>
+<!-- Package 2: The Morning Tea (Highlight/Popular) -->
+<article class="bg-surface-container-high rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="inline-block bg-secondary-container px-space-xs py-0.5 rounded text-on-secondary-fixed font-label-sm text-label-sm font-bold tracking-wider uppercase mb-1">
+            Neighbourhood Favourite
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">The Morning Tea</h3>
+</div>
+<div class="text-right">
+<span class="font-price-callout text-price-callout text-primary">$16</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        The balanced pause between presentations. Pastries, house tarts, and fresh seasonal sweetness.
+      </p>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Filter coffee carafes &amp; curated organic teas</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Assortment of morning croissants (plain, almond &amp; pain au chocolat)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Signature seasonal fig &amp; almond frangipane tarts</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Hand-cut seasonal fresh fruit skewers</span>
+</div>
+</div>
+</article>
+<!-- Package 3: The Full Spread -->
+<article class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">All-Hands &amp; Executive</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">The Full Spread</h3>
+</div>
+<div class="text-right">
+<span class="font-price-callout text-price-callout text-primary">$28</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ person</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        A complete culinary spread covering both warm savouries and wholesome morning bowls for longer workshops.
+      </p>
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">House roast filter coffee &amp; cold-pressed breakfast juices</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Warm savoury breakfast rolls (brioche, smoked bacon or halloumi)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Sweet bakes and rotating fruit loaves</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Coconut milk &amp; spiced fig chia pots</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">check</span>
+<span class="font-body-sm text-body-sm">Seasonal savoury sharing plates (whipped ricotta, roasted vine tomatoes)</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive Quick Headcount Estimator (Moment of Delight) -->
+<section class="px-margin pt-space-lg">
+<div class="bg-surface-container-highest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calculate</span>
+<span class="font-label-md text-label-md text-primary font-bold">Quick Estimator</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="headcount-label">12 people</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">6</span>
+<input class="w-full accent-primary h-2 bg-surface-container rounded-lg cursor-pointer" id="headcount-slider" max="50" min="6" step="1" type="range" value="12"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">50</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded shadow-sm">
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Coffee Run</span>
+<span class="font-price-callout text-[15px] text-primary" id="est-run">$108</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded shadow-sm">
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Morning Tea</span>
+<span class="font-price-callout text-[15px] text-primary" id="est-tea">$192</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded shadow-sm">
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Full Spread</span>
+<span class="font-price-callout text-[15px] text-primary" id="est-full">$336</span>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works / Clear Delivery Rules -->
+<section class="px-margin pt-space-xl pb-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">No Headaches</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">How ordering works</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Rule 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-md text-label-md text-primary font-bold">Order by 2pm the day before</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Gives our roaster and baker enough time to prep fresh grains and prove morning dough.
+          </p>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-md text-label-md text-primary font-bold">Free delivery within 5km of 8 Chalk Lane</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Brought directly to your office reception by bike or small cargo van. Further locations priced at flat $15.
+          </p>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">countertops</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-md text-label-md text-primary font-bold">Simple, fuss-free setup provided</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Our courier unboxes, lays out thermoses with name tags, and arranges serving ware neatly. Zero cleanup fuss.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Single Primary Action Block -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col items-center text-center gap-space-sm">
+<div class="max-w-xs flex flex-col items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">mark_email_read</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Ready to book a date?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Send us your headcount, delivery address, and date. We reply within 2 working hours with an itemised invoice.
+      </p>
+</div>
+<!-- The EXACT single primary CTA of the page -->
+<a class="w-full max-w-sm flex items-center justify-center gap-space-xs bg-primary-container text-on-primary font-label-md text-label-md font-bold px-space-lg py-3.5 rounded hover:bg-primary transition-colors shadow-md active:scale-[0.99]" href="mailto:catering@figandfilter.com?subject=Catering%20Enquiry%20-%20Fig%20%26%20Filter&amp;body=Hi%20Fig%20%26%20Filter%20team%2C%0A%0AWe%20would%20like%20to%20place%20a%20catering%20order%20for%3A%0A-%20Date%20%26%20Delivery%20Time%3A%20%0A-%20Package%3A%20%0A-%20Headcount%3A%2012%0A-%20Delivery%20Address%3A%20%0A-%20Dietary%20Notes%3A%20%0A%0AThank%20you!" id="catering-cta-link">
+<span>Order catering</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Direct inbox: catering@figandfilter.com</span>
+</section>
+</div>
+<script>
+  (function() {
+    const slider = document.getElementById('headcount-slider');
+    const label = document.getElementById('headcount-label');
+    const runEl = document.getElementById('est-run');
+    const teaEl = document.getElementById('est-tea');
+    const fullEl = document.getElementById('est-full');
+    const ctaLink = document.getElementById('catering-cta-link');
+
+    if (!slider || !label) return;
+
+    function updateEstimates() {
+      const count = parseInt(slider.value, 10);
+      label.textContent = count + ' people';
+      runEl.textContent = '$' + (count * 9);
+      teaEl.textContent = '$' + (count * 16);
+      fullEl.textContent = '$' + (count * 28);
+
+      const subject = encodeURIComponent('Catering Enquiry (' + count + ' people) - Fig & Filter');
+      const body = encodeURIComponent(
+        'Hi Fig & Filter team,\n\nWe would like to organise catering for our team:\n' +
+        '- Date & Preferred Delivery Time: \n' +
+        '- Desired Package (The Coffee Run / The Morning Tea / The Full Spread): \n' +
+        '- Headcount: ' + count + ' people\n' +
+        '- Delivery Address: \n' +
+        '- Dietary Requirements (GF / Vegan / Dairy-free): \n\n' +
+        'Thank you!'
+      );
+      ctaLink.href = 'mailto:catering@figandfilter.com?subject=' + subject + '&body=' + body;
+    }
+
+    slider.addEventListener('input', updateEstimates);
+  })();
+</script></div><footer class="w-full mt-space-xl bg-surface-container-low px-margin py-space-lg"><div class="max-w-md mx-auto flex flex-col gap-space-sm text-left"><h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Fig &amp; Filter</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Tuesday to Sunday, 7:30am – 5:00pm (Monday closed)</p><p class="font-body-sm text-body-sm text-on-surface-variant">8 Chalk Lane</p><a class="font-body-sm text-body-sm text-primary-container underline underline-offset-4 decoration-primary/40 hover:text-secondary" href="mailto:hello@figandfilter.com">hello@figandfilter.com</a><div class="pt-space-xs"><a class="inline-block font-label-md text-label-md font-bold text-primary-container underline underline-offset-4 decoration-secondary hover:text-secondary" data-path="catering" href="#">Order catering</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container font-bold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Menu</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary-container font-bold" data-path="catering" href="#"><span class="material-symbols-outlined text-[20px]">bakery_dining</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Catering</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">coffee</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">About</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="visit" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Visit</span></a></div></nav></body></html>
